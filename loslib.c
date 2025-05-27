@@ -122,7 +122,7 @@
 
 /* ISO C definitions */
 #define LUA_TMPNAMBUFSIZE	L_tmpnam
-#define lua_tmpnam(b,e)		{ e = (tmpnam(b) == NULL); }
+#define lua_tmpnam(b,e)		{ e = (mkstemp(b) == -1); }
 
 #endif				/* } */
 
