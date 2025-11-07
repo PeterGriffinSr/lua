@@ -20,7 +20,6 @@
 #endif
 #endif
 
-
 /*
 ** Choose suitable platform-specific features. Default is no
 ** platform-specific features. Some of these options may need extra
@@ -32,7 +31,6 @@
 #define LUA_USE_POSIX
 #define LUA_ANSI
 #endif
-
 
 /* no need to change anything below this line ----------------------------- */
 
@@ -54,7 +52,6 @@
 #include <string.h>
 #include <time.h>
 
-
 /* setup for luaconf.h */
 #define LUA_CORE
 #define LUA_LIB
@@ -66,9 +63,9 @@
 #undef LUAI_FUNC
 #undef LUAI_DDEC
 #undef LUAI_DDEF
-#define LUAI_FUNC	static
-#define LUAI_DDEC(def)	/* empty */
-#define LUAI_DDEF	static
+#define LUAI_FUNC static
+#define LUAI_DDEC(def) /* empty */
+#define LUAI_DDEF static
 
 /* core -- used by all */
 #include "lzio.c"

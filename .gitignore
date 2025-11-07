@@ -1,4 +1,5 @@
 .gitattributes
+.vscode
 
 *.so
 *.o
